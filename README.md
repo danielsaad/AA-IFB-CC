@@ -1,12 +1,10 @@
-# Estruturas-de-Dados-II-IFG-TADS
+# Análise de Algoritmos
 
-## Compilação
-A compilação de qualquer arquivo fonte .cpp pode ser feita a partir da linha de comando:
-```shell
-$g++ arquivofonte.cpp -std=c++11 -o nomedoexecutavel
-```
+Material auxiliar pra disciplina de Estruturas de Dados e Algoritmos do curso de Ciência da Computação do IFB-Taguatinga.
+
 ## Contribuidores
-* Alex Sandro da Silva Magalhães Júnior
+
+* Alex Sandro da Silva Magalhães Júnior (IFG-TADS)
 	* Quicksort em Java
 	* Heapsort em Java
 	* Insertionsort em Java
