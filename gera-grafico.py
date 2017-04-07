@@ -2,24 +2,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def f(n):
-        l=[]
-        for i in n:
-                #INSIRA AQUI A FUNCAO f(n) representando-a por f(i)
-                l.append(       np.math.factorial(i)    )
-        return l
+        #INSIRA AQUI A FUNCAO f(n)
+        return  np.math.factorial(n)    #fatorial de n
 
 def g(n):
-        l=[]
-        for i in n:
-                #INSIRA AQUI A FUNCAO g(n) representando-a por g(i)
-                l.append( i**i )
-        return l
+        #INSIRA AQUI A FUNCAO g(n)
+        return n**(10*n)                        #n elevado a 10n
 
 #define intervalo e amostragem
 amostra = np.arange(0, 100, 1)
 
-plt.plot(amostra, f(amostra), 'b-',label="f(n)")
-plt.plot(amostra, g(amostra) , 'r--',label="g(n)")
+plt.plot(amostra, [f(n) for n in amostra ], 'b-',label="f(n)")
+plt.plot(amostra, [g(n) for n in amostra ] , 'r--',label="g(n)")
 plt.xlabel("n")
 plt.ylabel("Passos")
 plt.title("Comportamento de Funções")
