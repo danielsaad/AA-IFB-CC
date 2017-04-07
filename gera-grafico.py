@@ -2,13 +2,21 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def f(n):
-    return 100*n*np.log(n)
+        l=[]
+        for i in n:
+		#INSIRA AQUI A FUNCAO f(n) representando-a por f(i)
+		l.append( np.math.factorial(i) )
+        return l
 
 def g(n):
-	return n*n
+        l=[]
+        for i in n:
+		#INSIRA AQUI A FUNCAO g(n) representando-a por g(i)
+		l.append( i**i )
+	return l
 
 #define intervalo e amostragem
-amostra = np.arange(0, 100000, 0.5)
+amostra = np.arange(0, 1000, 1)
 
 plt.plot(amostra, f(amostra), 'b-',label="f(n)")
 plt.plot(amostra, g(amostra) , 'r--',label="g(n)")
