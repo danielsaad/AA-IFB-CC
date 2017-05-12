@@ -1,14 +1,17 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def f(n):
-    return 100*n*np.log(n)
+def f(domain):
+	l=[]
+	for i in domain:
+		l.append(np.math.factorial(i))
+	return l
 
-def g(n):
-	return n*n
+def g(domain):
+	return domain**domain
 
 #define intervalo e amostragem
-amostra = np.arange(0, 100000, 0.5)
+amostra = np.arange(1, 10, 1)
 
 plt.plot(amostra, f(amostra), 'b-',label="f(n)")
 plt.plot(amostra, g(amostra) , 'r--',label="g(n)")

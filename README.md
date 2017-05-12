@@ -1,6 +1,7 @@
 # Análise de Algoritmos
 
-Material auxiliar pra disciplina de Estruturas de Dados e Algoritmos do curso de Ciência da Computação do IFB-Taguatinga.
+Material auxiliar pra disciplina de Análise de Algoritmos do curso de 
+Ciência da Computação do IFB-Taguatinga.
 
 ## Contribuidores
 
@@ -10,3 +11,5 @@ Material auxiliar pra disciplina de Estruturas de Dados e Algoritmos do curso de
 	* Insertionsort em Java
 	* Bubblesort em Java
 	* Mergesort em Java
+* Rafael Passos
+	* Melhorias com relação ao gera-grafico.py
