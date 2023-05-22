@@ -1,12 +1,14 @@
 
 
 def main():
-    n: int = 5
+    n: int = 10
     matriz: list[list] = [
         [1, 1],
         [1, 0]]
 
-    print(multiplicacao_matriz_otimizada(matriz, n - 1))
+    matriz_tmp: list[list] = mul_matriz(
+        multiplicacao_matriz_otimizada(matriz, n - 1), [[1], [1]])
+    print(matriz_tmp[0][0])
 
 
 def multiplicacao_matriz_otimizada(matriz: list[list], k: int) -> list[list]:
