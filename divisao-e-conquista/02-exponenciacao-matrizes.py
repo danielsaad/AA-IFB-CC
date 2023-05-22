@@ -5,7 +5,12 @@ def main():
     matriz: list[list] = [
         [2, 2],
         [2, 2]]
-    print(multiplicacao_matriz_otimizada(matriz, 31))
+    matriz_b: list[list] = [
+        [2],
+        [2]]
+    mul_matriz(matriz, matriz_b)
+
+    # print(multiplicacao_matriz_otimizada(matriz, 31))
 
 
 def multiplicacao_matriz_otimizada(matriz: list[list], k: int) -> list[list]:
@@ -32,7 +37,7 @@ def mul_matriz(matriz_a: list[list], matriz_b: list[list]) -> list[list]:
 
     for i in range(len(matriz_a)):
         matriz_c.append([])
-        for j in range(len(matriz_a[i])):
+        for j in range(len(matriz_b[i])):
             tmp: float = 0
             for k in range(len(matriz_b)):
                 tmp += matriz_a[i][k] * matriz_b[k][j]
