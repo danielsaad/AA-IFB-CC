@@ -12,7 +12,7 @@ def build_dp_table(coins: list[int], W: int) -> list[list[int]]:
 
 if __name__ == '__main__':
     coins = [1, 5, 10, 25, 50, 100]
-    for w in [10, 25, 50,100,10000]:
-        dp = build_dp_table(coins, w)
+    for W in [10, 25, 50,100,10000]:
+        dp = build_dp_table(coins, W)
         for l in dp:
             print(l)
