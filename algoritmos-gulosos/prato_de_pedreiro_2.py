@@ -25,7 +25,7 @@ def mochila_frac(items: list, k: float) -> tuple[list,float]:
         qt = min(items[i].w, cur_k)
         value += items[i].v*qt
         cur_k -= qt
-        sol.append((qt,items[i].idx))
+        sol.append((qt,items[i].idx)) 
         i += 1
     return (sol,value)
 
